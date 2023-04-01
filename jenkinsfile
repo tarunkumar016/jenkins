@@ -9,7 +9,7 @@ pipeline {
 
         stage('This is first stage') {
             steps {
-                sh " printing environment $ENV_URL"
+                sh "echo printing environment $ENV_URL"
             }
         }
 
