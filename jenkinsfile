@@ -2,21 +2,9 @@ pipeline {
     agent any
     stages{
 
-        stage('Stage Name - 1') {
+        stage('This is first stage') {
             steps {
-                sh "echo This is my first stage in the Jenkins pipeline"
-            }
-        }
-        
-        stage('Stage Name - 2') {
-            steps {
-                sh "echo i am excuting stage -2"
-            }
-        }
-
-        stage('Stage Name') {
-            steps {
-                sh "echo i am executing stage -3"
+                sh "echo This is first stage"
             }
         }
     }
