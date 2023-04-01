@@ -4,7 +4,13 @@ pipeline {
 
         stage('This is first stage') {
             steps {
-                sh "echo first stage"
+                sh "echo i am tarun kumar"
+            }
+        }
+
+        stage('This is second stage') {
+            steps {
+                sh "echo i am tarun kumar"
             }
         }
     }
