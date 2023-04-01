@@ -10,7 +10,12 @@ pipeline {
 
         stage('This is second stage') {
             steps {
-                sh "echo i am tarun kumar"
+                sh '''
+                echo i am using Pipeline Syntax help
+                echo print multiple lines
+                echo print about using syntax
+                
+                '''
             }
         }
     }
