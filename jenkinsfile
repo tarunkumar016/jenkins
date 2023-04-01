@@ -1,10 +1,15 @@
 pipeline {
     agent any
+
+    environment {
+        ENV_URL = "tarun.kumar.com"
+    }
+
     stages{
 
         stage('This is first stage') {
             steps {
-                sh "echo i am tarun kumar"
+                sh "echo printing environment $ENV_URL"
             }
         }
 
@@ -14,7 +19,7 @@ pipeline {
                 echo i am using Pipeline Syntax help
                 echo print multiple lines
                 echo print about using syntax
-                
+
                 '''
             }
         }
