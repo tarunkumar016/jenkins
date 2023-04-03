@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         ENV_URL = "tarun.kumar.com"
+        CREDENTIALS = credentials('SSH_CRED')
     }
 
     stages{
@@ -13,6 +14,7 @@ pipeline {
               }            
             steps {
                 sh "echo printing environment $ENV_URL"
+                sh "env"
             }
         }
 
