@@ -8,6 +8,9 @@ pipeline {
     stages{
 
         stage('This is first stage') {
+             environment {
+                        ENV_URL = "Manoj.kumar.com"
+              }            
             steps {
                 sh "echo printing environment $ENV_URL"
             }
