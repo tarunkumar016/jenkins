@@ -6,6 +6,9 @@ pipeline {
         CREDENTIALS = credentials('SSH_CRED')
     }
     triggers { pollSCM('*/1 * * * 1-5') }
+    tools {
+        maven 'maven-3.8.6' 
+    }    
 
     stages{
 
@@ -15,7 +18,7 @@ pipeline {
               }            
             steps {
                 sh "echo printing environment $ENV_URL"
-                sh "env"
+                sh 'mvn --version'
             }
         }
 
