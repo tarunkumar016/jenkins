@@ -17,7 +17,7 @@ pipeline {
 
     stages{
 
-        stage('This is firstTTT stage') {
+        stage('This is firstTTTt stage') {
              environment {
                         ENV_URL = "Manoj.kumar.com"
               }            
