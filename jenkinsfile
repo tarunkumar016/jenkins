@@ -31,6 +31,8 @@ pipeline {
         }
 
         stage('This is second stage') {
+            when { branch 'dev' }
+            
             steps {
                 sh '''
                 echo i am using Pipeline Syntax help
